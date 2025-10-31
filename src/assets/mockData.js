@@ -7,7 +7,7 @@ export const products = [
         category: "tablas",
         price: 189000,
         stock: 5,
-        image: "/assets/tablas/hyperlite-motive.jpg",
+        image: "/products/hyperlite-motive.jpg",
         description: "Tabla de wakeboard versátil ideal para principiantes y avanzados."
     },
     {
@@ -16,7 +16,7 @@ export const products = [
         category: "tablas",
         price: 220000,
         stock: 4,
-        image: "/assets/tablas/ronix-vault.jpg",
+        image: "/products/ronix-vault.jpg",
         description: "Tabla con perfil asimétrico que facilita los giros y saltos."
     },
 
@@ -27,7 +27,7 @@ export const products = [
         category: "cascos",
         price: 58000,
         stock: 8,
-        image: "/assets/cascos/liquidforce-hero.jpg",
+        image: "/products/liquidforce-hero.jpg",
         description: "Casco liviano y resistente con certificación de impacto acuático."
     },
     {
@@ -36,7 +36,7 @@ export const products = [
         category: "cascos",
         price: 54000,
         stock: 6,
-        image: "/assets/cascos/jobe-base.jpg",
+        image: "/products/jobe-base.jpg",
         description: "Protección confiable y cómoda para todos los niveles de rider."
     },
 
@@ -47,7 +47,7 @@ export const products = [
         category: "chalecos",
         price: 73000,
         stock: 7,
-        image: "/assets/chalecos/follow-pop.jpg",
+        image: "/products/follow-pop.jpg",
         description: "Diseño ergonómico con máxima flotabilidad y movilidad."
     },
     {
@@ -56,7 +56,7 @@ export const products = [
         category: "chalecos",
         price: 81000,
         stock: 5,
-        image: "/assets/chalecos/oneill-slasher.jpg",
+        image: "/products/oneill-slasher.jpg",
         description: "Chaleco ultraligero de neoprene con excelente ajuste al cuerpo."
     },
 
@@ -67,7 +67,7 @@ export const products = [
         category: "botas",
         price: 174000,
         stock: 3,
-        image: "/assets/botas/ronix-divide.jpg",
+        image: "/products/ronix-divide.jpg",
         description: "Botas cómodas y resistentes, fáciles de ajustar incluso en el agua."
     },
     {
@@ -76,7 +76,7 @@ export const products = [
         category: "botas",
         price: 169000,
         stock: 4,
-        image: "/assets/botas/liquidforce-transit.jpg",
+        image: "/products/liquidforce-transit.jpg",
         description: "Botas versátiles con gran soporte para saltos y maniobras exigentes."
     }
 ];
