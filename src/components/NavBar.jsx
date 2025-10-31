@@ -1,37 +1,29 @@
-import CartWidget from "./CartWidget.jsx";
+import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
+import { Link } from "react-router-dom";
+import CartWidget from "./CartWidget";
 
-function NavBar() {
-    return (
-        <nav style={styles.nav}>
-            <h1 style={styles.logo}>Wakeboard</h1>
-            <ul style={styles.links}>
-                <li><a href="#">Tablas</a></li>
-                <li><a href="#">Botas</a></li>
-                <li><a href="#">Casco</a></li>
-                <li><a href="#">Chalecos</a></li>
-            </ul>
+const NavBar = () => (
+    <AppBar position="fixed" color="primary">
+        <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+            <Typography
+                variant="h6"
+                component={Link}
+                to="/"
+                sx={{ color: "white", textDecoration: "none", fontWeight: "bold" }}
+            >
+                🏄 Wakeboard Store
+            </Typography>
+
+            <Box>
+                <Button color="inherit" component={Link} to="/categoria/tablas">Tablas</Button>
+                <Button color="inherit" component={Link} to="/categoria/cascos">Cascos</Button>
+                <Button color="inherit" component={Link} to="/categoria/chalecos">Chalecos</Button>
+                <Button color="inherit" component={Link} to="/categoria/botas">Botas</Button>
+            </Box>
+
             <CartWidget />
-        </nav>
-    );
-}
-
-const styles = {
-    nav: {
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "1rem",
-        backgroundColor: "#f4f4f4",
-    },
-    logo: {
-        fontSize: "1.5rem",
-        fontWeight: "bold",
-    },
-    links: {
-        listStyle: "none",
-        display: "flex",
-        gap: "1rem",
-    }
-};
+        </Toolbar>
+    </AppBar>
+);
 
 export default NavBar;

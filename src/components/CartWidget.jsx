@@ -1,23 +1,18 @@
-function CartWidget() {
-    return (
-        <div style={styles.cart}>
-            🛒 <span style={styles.count}>3</span>
-        </div>
-    );
-}
+import { IconButton, Badge } from "@mui/material";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import { useCart } from "../context/CartContext";
+import { Link } from "react-router-dom";
 
-const styles = {
-    cart: {
-        display: "flex",
-        alignItems: "center",
-        fontSize: "1.2rem",
-        cursor: "pointer",
-    },
-    count: {
-        marginLeft: "0.5rem",
-        fontWeight: "bold",
-        color: "red",
-    }
+const CartWidget = () => {
+    const { totalQuantity } = useCart();
+
+    return (
+        <IconButton component={Link} to="/carrito" color="inherit" sx={{ ml: 2 }}>
+            <Badge badgeContent={totalQuantity()} color="secondary">
+                <ShoppingCartIcon />
+            </Badge>
+        </IconButton>
+    );
 };
 
 export default CartWidget;

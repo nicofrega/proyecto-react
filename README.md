@@ -1,12 +1,62 @@
-# React + Vite
+# 🏄 Wakeboard Store — React + Firebase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+_E-commerce de productos de wakeboard desarrollado en React con Vite, utilizando Firebase Firestore como base de datos._
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- **React + Vite**
+- **Firebase Firestore**
+- **Material UI** para interfaz moderna y responsiva
+- **React Router DOM** para navegación SPA
+- **Context API** para manejo global del carrito
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🗂️ Estructura principal
+
+src/
+├─ assets/ → imágenes de productos
+├─ components/ → componentes UI reutilizables
+├─ context/ → estado global del carrito
+├─ firebase/ → configuración de Firebase
+├─ App.jsx → enrutado principal
+├─ main.jsx → punto de entrada
+├─ uploadData.js → script opcional para cargar productos iniciales
+
+
+---
+
+## ⚙️ Instalación
+
+1. Cloná el repositorio:
+
+```bash
+git clone https://github.com/nicofrega/proyecto-react.git
+cd proyecto-react
+
+
+Instalá dependencias:
+
+npm install
+
+
+Ejecutá el entorno local:
+
+npm run dev
+
+
+El proyecto se abrirá en:
+👉 http://localhost:5173
+
+🛒 Funcionalidades principales
+
+✅ Listado de productos: muestra todos o filtrados por categoría.
+✅ Detalle de producto: descripción, stock y opción de agregar al carrito.
+✅ Carrito persistente: permite modificar cantidades o eliminar productos.
+✅ Checkout: formulario de compra con registro de orden en Firestore.
+
+
+🧠 Autor
+Nicolás Frega
